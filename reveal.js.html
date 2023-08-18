@@ -45,11 +45,48 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h2>reveal.js 学习笔记<h2>
+					<h2>reveal.js 学习笔记</h2>
+					<p>
+						- <a href="https://revealjs.com/">文档</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">代码</a>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>竖向Vertical Slides </h2>
+						<p>按 <em>空格</em>，或者 <em>下键</em> 进入竖向页面</p>
+						<p>按 <strong>ESC</strong> 进行全览</p>
+						<p>按 <strong>S</strong> 进入  <a href="https://revealjs.com/speaker-view/">演示模式</a> </p>
+						<aside class="notes">
+							在演示模式下，这里可以写注释
+						</aside>
+	
+						<p>按 B 或者 . 可以暂停演示</p>
+						<a href="#/1/1" class="navigate-down">
+							⬇️
+						</a>
+					</section>
+					<section>
+						<h2>地下一层</h2>
+						<h3>三级标题</h3>
+						<h4>四级标题</h4>
+						<p>适合用来添加细节等</p>
+					</section>
+	
+					<section>
+						<h2>地下二层</h2>
+						<p>好了，可以上去了</p>
+						<br>
+						<a href="#/1">
+							⬆️
+						</a>
+						<br>
+					</section>
 				</section>
 
 
-<section>
+				<section>
 				<section><div id="myPresentation" class="slides">
 					<div>
 						<h3>无序列表</h3>
@@ -74,26 +111,18 @@
 							<table>
 								<thead>
 									<tr>
-										<th>Item</th>
-										<th>Value</th>
-										<th>Quantity</th>
+										<th>Item</th><th>Value</th><th>Quantity</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apples</td>
-										<td>$1</td>
-										<td>7</td>
+										<td>Apples</td><td>$1</td><td>7</td>
 									</tr>
 									<tr>
-										<td>Lemonade</td>
-										<td>$2</td>
-										<td>18</td>
+										<td>Lemonade</td><td>$2</td><td>18</td>
 									</tr>
 									<tr>
-										<td>Bread</td>
-										<td>$3</td>
-										<td>2</td>
+										<td>Bread</td><td>$3</td><td>2</td>
 									</tr>
 								</tbody>
 							</table>
@@ -101,10 +130,9 @@
 
 					<div>
 					<h3 data-id="code-title">代码高亮</h3>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-						Reveal.on( 'customevent', function() {
-							console.log( '"customevent" has fired' );
-						} );
+					<pre><code class="javascript"  data-trim data-line-numbers>
+						print('hello');
+						print('world');
 					</code></pre>
 				  </div>
 				</section>
@@ -147,59 +175,7 @@
 					</p>
 				</section>
 
-
-
-			</section>
-
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>竖向Vertical Slides </h2>
-						<p>按 <em>空格</em>，或者 <em>下键</em> 进入竖向页面</p>
-						<p>按 <strong>ESC</strong> 进行全览</p>
-						<p>按 <strong>S</strong> 进入  <a href="https://revealjs.com/speaker-view/">演示模式</a> </p>
-						<aside class="notes">
-							在演示模式下，这里可以写注释
-						</aside>
-
-						<p>按 B 或者 . 可以暂停演示</p>
-
-						<br>
-						<a href="#/2/1" class="navigate-down">
-							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>地下一层</h2>
-						<h3>三级标题</h3>
-						<p>适合用来添加细节等</p>
-					</section>
-
-					<section>
-						<h2>代码高亮</h2>
-						<pre>
-						<code class="hljs javascript" data-trim data-line-numbers>
-							print("hello");
-						</code>
-					</pre>
-					</section>
-
-					<section>
-						<h2>地下二层</h2>
-						<p>好了，可以上去了</p>
-						<br>
-						<a href="#/1">
-							<img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(180deg);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow">
-						</a>
-						<br>
-					</section>
 				</section>
-
-
-
-
-
 
 
 				<section data-auto-animate>
@@ -215,7 +191,6 @@
 						  );
 						}
 					</code></pre>
-					<p>代码高亮</p>
 				</section>
 
 				<section data-auto-animate>
@@ -292,17 +267,13 @@
 				<section>
 					<section id="fragments">
 						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+						<p>使用 class="fragment" </p>
+						<p class="fragment"> 可以实现 </p>
+						<p><span class="fragment">“一步一步显示”</span> <span class="fragment">的效果</span></p>
 					</section>
 					<section>
 						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
+						<p>还可以设置 Fragments 的特效:</p>
 						<p class="fragment grow">grow</p>
 						<p class="fragment shrink">shrink</p>
 						<p class="fragment fade-out">fade-out</p>
@@ -321,7 +292,7 @@
 				<section id="transitions">
 					<h2>Transition Styles</h2>
 					<p>
-						You can select from different transitions, like: <br>
+						可以选择一些切换样式: <br>
 						<a href="?transition=none#/transitions">None</a> -
 						<a href="?transition=fade#/transitions">Fade</a> -
 						<a href="?transition=slide#/transitions">Slide</a> -
@@ -334,7 +305,7 @@
 				<section id="themes">
 					<h2>Themes</h2>
 					<p>
-						reveal.js comes with a few themes built in: <br>
+						有一些主题可以选择 <br>
 						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/black.css'); return false;">Black (default)</a> -
 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/white.css'); return false;">White</a> -
@@ -352,26 +323,27 @@
 
 				<section>
 					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
-						</a>
+						<h2>背景</h2>
+						<pre><code class="hljs html wrap">&lt;section data-background="#dddddd"&gt;</code></pre>
+						<a href="./1" class="navigate-down">⬇️</a>
 					</section>
 					<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
-						<h2>Gradient Backgrounds</h2>
+						<h2>🐟</h2>
 						<pre><code class="hljs html wrap">&lt;section data-background-gradient=
 							"linear-gradient(to bottom, #ddd, #191919)"&gt;</code></pre>
 					</section>
+					<section data-background-gradient="radial-gradient(#283b95, #17b2c3)">
+						<h2>🐳</h2>
+					  </section>
 					<section data-background="https://static.slid.es/reveal/image-placeholder.png">
 						<h2>Image Backgrounds</h2>
 						<pre><code class="hljs html">&lt;section data-background="image.png"&gt;</code></pre>
 					</section>
 					<section data-background="https://static.slid.es/reveal/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
 						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+						<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background="image.png"
+						data-background-repeat="repeat" 
+						data-background-size="100px"&gt;</code></pre>
 					</section>
 					<section data-background-video="https://static.slid.es/site/homepage/v1/homepage-video-editor.mp4" data-background-color="#000000">
 						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
@@ -382,90 +354,47 @@
 					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
 						<h2>... and GIFs!</h2>
 					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs javascript">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section data-background-iframe="https://hakim.se" data-background-interactive>
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-						<h2>Iframe Backgrounds</h2>
-						<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the page in the background.</p>
-					</div>
-				</section>
 
 
+					<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+						<h2>背景切换</h2>
+						<p>
+							以 "zoom" 的方式切换背景
+						</p>
+						<pre><code class="hljs javascript">
+							data-background-transition="zoom"
+							或者
+							Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+					</section>
 
-
-
-
-
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.on( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
+					<section data-background-iframe="https://www.guofei.site/reading/#/README" data-background-interactive>
+						<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>Iframe 背景</h2>
+							<p>可以把一个网页设置为背景</p>
+							<pre><code class="hljs javascript">&lt;section data-background-iframe="https://www.guofei.site/reading/#/README" data-background-interactive&gt;</code></pre>
+						</div>
+					</section>
 				</section>
 
 
                 <section>
                     <h3>更多的效果展示</h3>
-                    <a href="./examples/backgrounds.html">backgrounds.html</a>
-                    <a href="./examples/layout-helpers.html">layout-helpers.html</a>
-                    <a href="./examples/media.html">media.html</a>
-                    <a href="./examples/auto-animate.html">auto-animate.html</a>
-                    <a href="./examples/barebones.html">barebones.html</a>
-                    <a href="./examples/markdown.html">markdown.html</a>
-                    <a href="./examples/math.html">math.html</a>
-                    <a href="./examples/multiple-presentations.html">multiple-presentations.html</a>
+                    <a href="./examples/backgrounds.html">backgrounds</a> -
+                    <a href="./examples/layout-helpers.html">layout-helpers</a> -
+                    <a href="./examples/media.html">media</a> - 
+                    <a href="./examples/auto-animate.html">auto-animate</a> -
+                    <a href="./examples/barebones.html">barebones</a> -
+                    <a href="./examples/markdown.html">markdown</a> -
+                    <a href="./examples/math.html">math</a> -
+                    <a href="./examples/multiple-presentations.html">multiple-presentations</a>
                 </section>
-
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://revealjs.com/api/">Extensive JavaScript API</a></li>
-						<li><a href="https://revealjs.com/auto-slide/">Auto-progression</a></li>
-						<li><a href="https://revealjs.com/backgrounds/#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://revealjs.com/keyboard/">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
 
 				<section style="text-align: left;">
 					<h1>THE END</h1>
-					<p>
-						- <a href="https://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+					<li><a href="https://revealjs.com/backgrounds/#parallax-background">Parallax backgrounds</a></li>
+					<li><a href="https://revealjs.com/api/">Extensive JavaScript API</a></li>
+					<li><a href="https://revealjs.com/auto-slide/">Auto-progression</a></li>
+					<li><a href="https://revealjs.com/keyboard/">Custom keyboard bindings</a></li>
 				</section>
 
 			</div>
