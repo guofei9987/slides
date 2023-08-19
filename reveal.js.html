@@ -21,20 +21,27 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="https://www.guofei.site/slides/plugin/highlight/monokai.css">
 
-
 		<style>
+			/* 分栏，比 r-hstack 好看，因为是固定宽度的 */
+			.column2 {
+				width: 50%;
+				float: left;
+			  }
 
+			  .column3 {
+				width: 33%;
+				float: left;
+			  }
 
-.reveal .slides section > div.slides {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
+			  .column4 {
+				width: 25%;
+				float: left;
+			  }
 
-/* .reveal .slides section > div.slides > div {
-  border: 1px solid #000;
-} */
-
+			  .column5 {
+				width: 20%;
+				float: left;
+			  }
 		</style>
 	</head>
 
@@ -54,10 +61,12 @@
 
 				<section>
 					<section>
-						<h2>竖向Vertical Slides </h2>
+						<h2>快捷键</h2>
 						<p>按 <em>空格</em>，或者 <em>下键</em> 进入竖向页面</p>
 						<p>按 <strong>ESC</strong> 进行全览</p>
 						<p>按 <strong>S</strong> 进入  <a href="https://revealjs.com/speaker-view/">演示模式</a> </p>
+						<p>按 <strong>F</strong> 进入全屏</p>
+
 						<aside class="notes">
 							在演示模式下，这里可以写注释
 						</aside>
@@ -66,8 +75,8 @@
 						<button class="navigate-up">⬆</button>
 						<p>
 						<button class="navigate-left">⬅</button>
-						<a href="#/2/2" class="navigate-down">🔗</a>
-						<button class="navigate-right">➡️</button>
+						<a href="#/2/2">⬏</a>
+						<button class="navigate-right">⮕</button>
 						</p>
 						<button class="navigate-down">⬇</button>
 
@@ -83,64 +92,73 @@
 						<h2>地下二层</h2>
 						<p>好了，可以上去了</p>
 						<br>
-						<a href="#/1">
-							⬆️
-						</a>
+						<a href="#/1">⬏</a>
 						<br>
 					</section>
 				</section>
 
 
+
 				<section>
-				<section><div id="myPresentation" class="slides">
-					<div>
-						<h3>无序列表</h3>
-							<ul>
-								<li>No order here</li>
-								<li>Or here</li>
-								<li>Or here</li>
-								<li>Or here</li>
-							</ul>
-					</div>
+					<section>
+						<div class="r-vstack">
+							<div class="r-hstack">
+								<div>
+									<h3>无序列表</h3>
+										<ul>
+											<li>用 ul + li 标签</li>
+											<li>Or here</li>
+											<li>Or here</li>
+											<li>Or here</li>
+										</ul>
+								</div>
+	
+								<div>
+									<h3>有序列表</h3>
+										<ol>
+											<li>用 ol + li 标签</li>
+											<li>Two is smaller than...</li>
+										</ol>
+								</div>
+			
+	
+							</div>
+	
+							<div class="r-hstack">
+								<div>
+									<h3>表格</h3>
+									<table>
+										<tr><th>tr + th 标签</th><th>标题行</th><th>v</th></tr>
+										<tr><td> tr + td 标签</td><td>单元格</td><td>7</td></tr>
+										<tr><td>class="r-vstack"</td><td>纵向排列</td><td>18</td></tr>
+										<tr><td>class="r-hstack"</td><td>横向排列</td><td>2</td></tr>
+									</table>
+								</div>
+							</div>
+						  </div>
 
-					<div>
-						<h3>有序列表</h3>
-							<ol>
-								<li>One is smaller than...</li>
-								<li>Two is smaller than...</li>
-							</ol>
-					</div>
+					</section>
 
-					<div>
-						<h3>表格</h3>
-							<table>
-								<thead>
-									<tr>
-										<th>Item</th><th>Value</th><th>Quantity</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Apples</td><td>$1</td><td>7</td>
-									</tr>
-									<tr>
-										<td>Lemonade</td><td>$2</td><td>18</td>
-									</tr>
-									<tr>
-										<td>Bread</td><td>$3</td><td>2</td>
-									</tr>
-								</tbody>
-							</table>
-					</div>
 
-					<div>
-					<h3 data-id="code-title">代码高亮</h3>
-					<pre><code class="javascript"  data-trim data-line-numbers>
-						print('hello');
-						print('world');
-					</code></pre>
-				  </div>
-				</section>
+					<section>
+						<div class="column2">
+							<h3 data-id="code-title">代码高亮</h3>
+							<pre><code class="javascript"  data-trim data-line-numbers>
+								print('hello');
+								print('world');
+							</code></pre>
+						</div>
+
+						<div class="column2">
+							<h3>LaTeX</h3>
+							\[\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+							\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+							\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
+							\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0
+							\end{vmatrix}  \]
+						</div>
+
+					</section>
 
 
 				<section data-markdown>
@@ -164,15 +182,6 @@
 
 
 				<section>
-					<h3>LaTeX</h3>
-						\[\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
-						\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
-						\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
-						\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0
-						\end{vmatrix}  \]
-				</section>
-
-				<section>
 					<h2>内部链接</h2>
 					<p>
 						例如：
@@ -180,6 +189,28 @@
 					</p>
 				</section>
 
+				</section>
+
+
+				<section>
+					<section>
+						<h2 class="r-fit-text">FIT TEXT</h2>
+						<h2 class="r-fit-text">横向尽量大，尽量撑满整个屏幕</h2>
+						<pre>
+							<code class="hljs javascript" data-trim data-line-numbers>
+								<h2 class="r-fit-text">FIT TEXT</h2>
+							</code>
+						</pre>
+						<p><a href="https://revealjs.com/layout/">参考</a></p>
+					</section>
+
+					<section>
+						<h2>r-stretch 和 r-frame</h2>
+						<img class="r-stretch" src="https://www.guofei.site/public/icon/fork.svg">
+						<p>class="r-stretch" 纵向尽量大（每页只能一个） </p>
+						<img class="r-frame" src="https://www.guofei.site/public/icon/fork.svg">
+						<p font-size: 5px;>class="r-frame" 在图片外框加个圈，使其更显眼</p>
+					</section>
 				</section>
 
 
@@ -259,15 +290,7 @@
 				</section>
 
 
-				<section>
-					<h2 class="r-fit-text">FIT TEXT</h2>
 
-					<pre>
-						<code class="hljs javascript" data-trim data-line-numbers>
-							<h2 class="r-fit-text">FIT TEXT</h2>
-						</code>
-					</pre>
-				</section>
 
 				<section>
 					<section id="fragments">
@@ -366,7 +389,7 @@
 					<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 						<h2>背景切换</h2>
 						<p>
-							以 "zoom" 的方式切换背景
+							以 "zoom" 的方式切换背景，也可以是 slide 等
 						</p>
 						<pre><code class="hljs javascript">
 							data-background-transition="zoom"
@@ -402,6 +425,9 @@
 					<li><a href="https://revealjs.com/api/">Extensive JavaScript API</a></li>
 					<li><a href="https://revealjs.com/auto-slide/">Auto-progression</a></li>
 					<li><a href="https://revealjs.com/keyboard/">Custom keyboard bindings</a></li>
+					<li><a href="https://revealjs.com/slide-visibility/">如何隐藏一个页面</a></li>
+					<li><a href="https://revealjs.com/themes/">官方主题</a></li>
+					<li><a href="https://revealjs.com/transitions/">页面切换</a></li>
 				</section>
 
 			</div>
