@@ -1,0 +1,20 @@
+/* 分栏，比 r-hstack 好看，因为这里是固定宽度的 */
+.column2 {
+    width: 50%;
+    float: left;
+}
+
+.column3 {
+    width: 33%;
+    float: left;
+}
+
+.column4 {
+    width: 25%;
+    float: left;
+}
+
+.column5 {
+    width: 20%;
+    float: left;
+}
