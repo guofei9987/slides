@@ -6,7 +6,7 @@
 //     - 3
 
 function Md2Col(md){
-	md = md.trim();
+	md = md.trim().replace(/\t/g, "    ");
 	let res = '';
 	let col_num = 0;
 	md.split('\n').forEach(i => {

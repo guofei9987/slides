@@ -1,131 +1,69 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 
-		<title>reveal.js学习笔记</title>
+	<title>reveal.js学习笔记</title>
 
-		<meta name="description" content="详细信息：学习笔记，等待">
-		<meta name="author" content="guofei">
+	<meta name="description" content="详细信息：学习笔记，等待">
+	<meta name="author" content="guofei">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" href="https://www.guofei.site/slides/dist/reset.css">
-		<link rel="stylesheet" href="https://www.guofei.site/slides/dist/reveal.css">
-		<link rel="stylesheet" href="https://www.guofei.site/slides/dist/theme/black.css" id="theme">
+	<link rel="stylesheet" href="https://www.guofei.site/slides/dist/reset.css">
+	<link rel="stylesheet" href="https://www.guofei.site/slides/dist/reveal.css">
+	<link rel="stylesheet" href="https://www.guofei.site/slides/dist/theme/black.css" id="theme">
+	<link rel="stylesheet" href="https://www.guofei.site/slides/plugin/highlight/monokai.css">
+	<link rel="stylesheet" href="https://www.guofei.site/slides/css/my.css">
+</head>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="https://www.guofei.site/slides/plugin/highlight/monokai.css">
-		<link rel="stylesheet" href="https://www.guofei.site/slides/css/my.css">
+<body>
 
-
-		<style>
-
-
-.reveal .slides section > div.slides {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-/* .reveal .slides section > div.slides > div {
-  border: 1px solid #000;
-} */
-
-		</style>
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://revealjs.com/pdf-export/">exported to PDF</a>, here's an example:</p>
-					<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-	
-
-
-
-				<section data-visibility="hidden">
-					<h2>Hidden Slides</h2>
-					<p>
-						This slide is visible in the source, but hidden when the presentation is viewed. You can show all hidden slides by setting the `showHiddenSlides` config option to `true`.
-					</p>
-				</section>
-
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.on( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-				
-
-			</div>
-
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>一级标题</h1>
+				<h2>二级标题</h2>
+				<h3>三级标题</h3>
+				<p>正文</p>
+			</section>
 		</div>
 
-		<script src="https://www.guofei.site/slides/dist/reveal.js"></script>
-		<script src="https://www.guofei.site/slides/plugin/zoom/zoom.js"></script>
-		<script src="https://www.guofei.site/slides/plugin/notes/notes.js"></script>
-		<script src="https://www.guofei.site/slides/plugin/search/search.js"></script>
-		<script src="https://www.guofei.site/slides/plugin/markdown/markdown.js"></script>
-		<script src="https://www.guofei.site/slides/plugin/math/math.js"></script>
-		<script src="https://www.guofei.site/slides/js/my.js"></script>
+	</div>
 
+	<script src="https://www.guofei.site/slides/dist/reveal.js"></script>
+	<script src="https://www.guofei.site/slides/plugin/zoom/zoom.js"></script>
+	<script src="https://www.guofei.site/slides/plugin/notes/notes.js"></script>
+	<script src="https://www.guofei.site/slides/plugin/search/search.js"></script>
+	<script src="https://www.guofei.site/slides/plugin/markdown/markdown.js"></script>
+	<script src="https://www.guofei.site/slides/plugin/math/math.js"></script>
+	<script src="https://www.guofei.site/slides/plugin/highlight/highlight.js"></script>
+	<script src="https://www.guofei.site/slides/js/my.js"></script>
 
+	<script>
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+			fragments: true, // 启用片段功能
 
-		<!-- 代码高亮 -->
-		<script src="https://www.guofei.site/slides/plugin/highlight/highlight.js"></script>
-		<script>
-
-			// Also available as an ES module, see:
-			// https://revealjs.com/initialization/
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				center: true,
-				hash: true,
-				fragments: true, // 启用片段功能
-
-				mathjax2: {
-					config: 'TeX-AMS_HTML-full',
-					TeX: {
-						Macros: {
-							R: '\\mathbb{R}',
-							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
-						}
+			mathjax2: {
+				config: 'TeX-AMS_HTML-full',
+				TeX: {
+					Macros: {
+						R: '\\mathbb{R}',
+						set: ['\\left\\{#1 \\; ; \\; #2\\right\\}', 2]
 					}
-				},
+				}
+			},
+			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.MathJax2]
+		});
+	</script>
+</body>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight,RevealMath.MathJax2]
-			});
-		</script>
-
-	</body>
 </html>
