@@ -16,9 +16,7 @@
 
 		<link rel="stylesheet" href="https://www.guofei.site/slides/dist/reset.css">
 		<link rel="stylesheet" href="https://www.guofei.site/slides/dist/reveal.css">
-		<link rel="stylesheet" href="https://www.guofei.site/slides/dist/theme/black.css" id="theme">
-
-		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="https://www.guofei.site/slides/dist/theme/league.css" id="theme">
 		<link rel="stylesheet" href="https://www.guofei.site/slides/plugin/highlight/monokai.css">
 		<link rel="stylesheet" href="https://www.guofei.site/slides/css/my.css">
 	</head>
@@ -31,7 +29,7 @@
 			<div class="slides">
 				<section>
 					<h2>reveal.js 学习笔记</h2>
-					<p><a href="#" target="_blank">演示</a> - <a href="?print-pdf" target="_blank">PDF</a></p>
+					<p><a href="#"  onclick="openNewWindow(); return false;">演示</a> - <a href="?print-pdf" target="_blank">PDF</a></p>
 				</section>
 
 				<section>
@@ -162,6 +160,10 @@
 						<div class="column2">
 							<h3 data-id="code-title">代码高亮</h3>
 							<pre><code class="javascript"  data-trim data-line-numbers>
+<pre><code class="javascript"  data-trim data-line-numbers>
+	print('hello');
+	print('world');
+</code></pre>
 								print('hello');
 								print('world');
 							</code></pre>
@@ -305,6 +307,15 @@
 						<div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
 					</div>
 					<h2 style="margin-top: 20px;">动画</h2>
+				</section>
+
+
+				<section>
+					<h2>Slide States</h2>
+
+					<section data-state="make-it-pop"></section>
+
+
 				</section>
 
 
