@@ -160,12 +160,10 @@
 						<div class="column2">
 							<h3 data-id="code-title">代码高亮</h3>
 							<pre><code class="javascript"  data-trim data-line-numbers>
-<pre><code class="javascript"  data-trim data-line-numbers>
-	print('hello');
-	print('world');
-</code></pre>
-								print('hello');
-								print('world');
+								&lt;pre&gt;&lt;code class="javascript"  data-trim data-line-numbers&gt;
+									print('hello');
+									print('world');
+								&lt;/code&gt;&lt;/pre&gt;
 							</code></pre>
 						</div>
 
@@ -312,10 +310,23 @@
 
 				<section>
 					<h2>Slide States</h2>
+					<pre><code class="javascript"  data-trim data-line-numbers>
+						&lt;section data-state="make-it-pop"&gt;&lt;/section&gt;
+					</code></pre>
 
-					<section data-state="make-it-pop"></section>
+					可以用css来控制它
+					<pre><code class="javascript"  data-trim data-line-numbers>
+					.make-it-pop {
+					filter: drop-shadow(0 0 10px purple);
+					}
+					</code></pre>
 
-
+					也可以用 javascript，打开页面时触发
+					<pre><code class="javascript"  data-trim data-line-numbers>
+					Reveal.on( 'make-it-pop', () => {
+						console.log('✨');
+					});
+					</code></pre>
 				</section>
 
 
