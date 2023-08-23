@@ -20,29 +20,7 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="https://www.guofei.site/slides/plugin/highlight/monokai.css">
-
-		<style>
-			/* 分栏，比 r-hstack 好看，因为是固定宽度的 */
-			.column2 {
-				width: 50%;
-				float: left;
-			  }
-
-			  .column3 {
-				width: 33%;
-				float: left;
-			  }
-
-			  .column4 {
-				width: 25%;
-				float: left;
-			  }
-
-			  .column5 {
-				width: 20%;
-				float: left;
-			  }
-		</style>
+		<link rel="stylesheet" href="https://www.guofei.site/slides/css/my.css">
 	</head>
 
 	<body>
@@ -85,7 +63,9 @@
 						<h2>地下一层</h2>
 						<h3>三级标题</h3>
 						<h4>四级标题</h4>
-						<p>适合用来添加细节等</p>
+						<p>垂直页适合用来添加细节</p>
+						<p> CTRL+Shift+F 搜索，（来自插件search.js） </p>
+						<p> Alt+click(CTRL+click in Linux) 用来局部放大（来自插件 zoom.js） </p>
 					</section>
 	
 					<section>
@@ -440,7 +420,7 @@
 		<script src="https://www.guofei.site/slides/plugin/search/search.js"></script>
 		<script src="https://www.guofei.site/slides/plugin/markdown/markdown.js"></script>
 		<script src="https://www.guofei.site/slides/plugin/math/math.js"></script>
-
+		<script src="https://www.guofei.site/slides/js/my.js"></script>
 
 		<!-- 代码高亮 -->
 		<script src="https://www.guofei.site/slides/plugin/highlight/highlight.js"></script>
@@ -449,6 +429,9 @@
 			// Also available as an ES module, see:
 			// https://revealjs.com/initialization/
 			Reveal.initialize({
+				width: 1500,
+				height: 900,
+				margin: 0.04,
 				controls: true,
 				progress: true,
 				center: true,
