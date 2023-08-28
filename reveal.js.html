@@ -273,7 +273,7 @@
 						  return (
 						    <div>
 						      <p>You clicked {count} times</p>
-						      <button onClick={() => setCount(count + 1)}>
+						      <button onClick={() =&gt; setCount(count + 1)}>
 						        Click me
 						      </button>
 						    </div>
@@ -324,7 +324,7 @@
 
 					也可以用 javascript，打开页面时触发
 					<pre><code class="javascript"  data-trim data-line-numbers>
-					Reveal.on( 'make-it-pop', () => {
+					Reveal.on( 'make-it-pop', () =&gt; {
 						console.log('✨');
 					});
 					</code></pre>
