@@ -51,13 +51,13 @@
 - 🧮 热爱算法和开源
 	- 我的开源贡献用于“才智号”火星直升机项目，实现了<a href="https://github.com/readme/featured/nasa-ingenuity-helicopter">人类首次在另一个星球的动力飞行</a>，并因此被 NASA 授予 <a href="https://github.com/guofei9987?achievement=mars-2020-contributor&amp;tab=achievements">徽章</a>
 	- one of 121 <a href="https://github.com/scipy/scipy/issues/7798">authors</a> in <a href="https://github.com/scipy/scipy/releases/tag/v1.0.0">scipy 1.0.0</a>
-	- 获得 GitHub Star 共 {{ site.data.data_github.star_cnt_str }}		
+	- 获得 GitHub Star 共 <span id="star_cnt_str"></span>
 	- CDA 持证人
 - 🤸 斜杠
-	- [技术博客](https://www.guofei.site/) 累积 {{ site.posts.size }} 篇
-	- 读书 {{ site.data.book_list.size }} 本，[读书笔记](https://www.guofei.site/reading/#/) {{ site.data.cnt_reading_words.cnt_reading_words }}
+	- <a href="https://www.guofei.site/">技术博客</a> 累积 <span id="cnt_blog"></span> 篇
+	- 读书 <span id="cnt_book"></span> 本，<a href="https://www.guofei.site/reading/#/">读书笔记</a> <span id="cnt_reading_words"></span> 字
 	- 爱好运动，能做 30 个 <b><a href="https://www.bilibili.com/video/BV1L64y1t7Ef/" target="_blank">单手俯卧撑</a></b>
-	- <a href="https://www.zhihu.com/people/guofei9987/answers/by_votes" target="_blank">知乎</a> 获得{{ site.data.achievement.zhihu_agree_str }}次赞同/{{ site.data.achievement.zhihu_collection_str }}次收藏/ {{ site.data.achievement.zhihu_follows_str }}个关注
+	- <a href="https://www.zhihu.com/people/guofei9987/answers/by_votes" target="_blank">知乎</a> 获得<span id="zhihu_agree_str"></span> 次赞同/ <span id="zhihu_collection_str"></span> 次收藏/ <span id="zhihu_follows_str"></span> 个关注
 
 					</div>
 				</section>
@@ -214,6 +214,24 @@ I contributed to:
 fetch('https://www.guofei.site/pages/achievement.json')
 .then((response) => response.json())
 .then((achievement) => console.log(achievement));
+
+
+fetch('https://www.guofei.site/pages/achievement.json')
+  .then(response => response.json())
+  .then(data => showData(data))
+  .catch(error => console.error(error));
+
+
+  function showData(data){
+	for(let key in data){
+		let tmp = document.getElementById(key);
+		if(tmp === null){
+			continue;
+		}
+		tmp.innerHTML = data[key];
+	}
+  }
+	
 
 	
 	</script>
