@@ -18,7 +18,7 @@
 		<link rel="stylesheet" href="https://slides.guofei.site/dist/reveal.css">
 		<link rel="stylesheet" href="https://slides.guofei.site/dist/theme/league.css" id="theme">
 		<link rel="stylesheet" href="https://slides.guofei.site/plugin/highlight/monokai.css">
-		<link rel="stylesheet" href="https://slides.guofei.site/css/my.css">
+		<link rel="stylesheet" href="https://slides.guofei.site/dist/my.css">
 	</head>
 
 	<body>
@@ -376,7 +376,6 @@
 					<h2>Themes</h2>
 					<p>
 						有一些主题可以选择 <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/black.css'); return false;">Black (default)</a> -
 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/white.css'); return false;">White</a> -
 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/league.css'); return false;">League</a> -
@@ -482,12 +481,10 @@
 		<script src="https://slides.guofei.site/plugin/search/search.js"></script>
 		<script src="https://slides.guofei.site/plugin/markdown/markdown.js"></script>
 		<script src="https://slides.guofei.site/plugin/math/math.js"></script>
-		<script src="https://slides.guofei.site/js/my.js"></script>
+		<script src="https://slides.guofei.site/dist/my.js"></script>
 		<script src="https://slides.guofei.site/plugin/highlight/highlight.js"></script>
 		<script>
 
-			// Also available as an ES module, see:
-			// https://revealjs.com/initialization/
 			Reveal.initialize({
 				backgroundTransition: 'concave',
 				width: 1500,
