@@ -26,9 +26,8 @@ function Md2Col(md){
 
 document.querySelectorAll('div').forEach(div => {
     if (div.classList.contains('my-columns')) {
-		let md=div.textContent;
-		const res=Md2Col(md);
-		console.log(res);
-		div.innerHTML=res;
+		let md = div.innerHTML;
+		const res = Md2Col(md);
+		div.innerHTML = res;
     }
 });
