@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>类比</title>
+
+	<meta name="description" content="用类比解释概念">
+	<meta name="author" content="guofei">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://slides.guofei.site/dist/reset.css">
+	<link rel="stylesheet" href="https://slides.guofei.site/dist/reveal.css">
+	<link rel="stylesheet" href="https://slides.guofei.site/dist/theme/league.css" id="theme">
+	<link rel="stylesheet" href="https://slides.guofei.site/plugin/highlight/monokai.css">
+	<link rel="stylesheet" href="https://slides.guofei.site/dist/my.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>用类比解释一些概念</h2>
+				<p><a href="https://www.guofei.site/">郭飞</a></p>
+				<p>2023年10月</p>
+				<p><a href="javascript:window.open(window.location.href, '_blank');">演示</a> - <a href="?print-pdf" target="_blank">PDF</a></p>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+打个比方, 你是吸血鬼资本家. 内存就是钱, 对象就是人, 资源就是任务.
+
+---------------
+
+## C
+
+最初有个老板 C 语言出身, 兢兢业业, 事必躬亲.
+
+该雇谁 (malloc), 该给谁升职加薪 (realloc), 该开除谁(free), 所有事情全部亲力亲为.
+
+老板水平和朱元璋一样高那当然效率 max, 工资 minimum.
+
+老板水平和朱由检一样, 一通操作猛如虎, 结果还不如不操作, 那就离完蛋不远了.
+
+很可惜很多老板眼高手低, 还以为自己很行, 分分钟发不出工资, 被 OS 破产清算.
+
+---
+## Object C
+
+有个老板 Object-C 语言出身, 对自己的能力还是有自知之明的.
+
+知道公司大了自己管不来, 就规定每个人都要记录谁依赖自己的工作.
+
+要是没人依赖自己的工作那就麻溜滚蛋.
+
+想法还是很好的, 但是很快就被人找到了漏洞.
+
+一些小团体来了个东南互保, 这不就相互依赖了吗, 这不就都不会被清了吗.
+
+接着还发展一大堆下线, 尾大不掉, 问题像癌症一样蔓延, 最后也倒闭了.
+
+---
+## Java
+
+有个老板 Java 出身, 一看这样不行啊, 但是自己也管不过来, 怎么办呢.
+
+于是就和财务说, 如果快要发不起工资呢, 就暂停所有的业务.
+
+开始回顾公司重大发展战略, 确定哪些部门有用, 各部门再自查哪些小组有用, 小组再自查哪些人有用.
+
+然后不在名单上的全部开了.
+
+说实话这对打工人挺不错的, 清算期间可以摸摸鱼, 喝点咖啡什么的.
+
+一般清算结束还会搬到新办公楼, 根据业务重新安排工位, 大家工作效率变得更高了.
+
+---
+## Go
+后来有个老板 Go 出身, 其他制度基本照抄 Java 但是取消了这个福利.
+
+员工就比较难受了, 一个工位待到死.
+
+## C++
+这样员工是开心了, 但是资本家气炸了.
+
+有个 C++ 出身的老板就想了个办法:
+
+每个人, 招进来都必须要有任务(RAII).  
+任务干完就可以开了(drop).  
+任务可以转交给别的人, 但是原来这个人必须要开掉(move).  
+但是有个问题, 因为一些历史遗留问题, 有的人背景很硬, 不用遵守这套规则.  
+
+做不到严格执法那啥先进制度都是废纸一张.  
+
+---
+### Rust
+Rust 出身的老板野心勃勃, 首先强制规定了这套流程, 干掉了所有关系户.
+
+你没被开掉一定是因为你有只有你能做的任务在推进, 这套系统叫所有权.
+
+然后说任务可以找人帮忙(borrow).
+
+然后又出了一套严密的制度来追踪找人帮忙时, 到底哪些人有在干活, 这套系统称为生命周期.
+
+生命周期结束就可以开除了, 因为这人已经被榨干价值了.
+
+为了保证这套制度稳定运行, 找了一个秘书 rustc 来审查.
+
+rustc 会先看一下你的计划书(code), 然后看看有没有违反公司章程的点.
+
+比如一个任务给了两个人做, rustc 就会说, 不可以哦, 这违反了公司章程 E0309, 你可以考虑 xxxxxx.
+
+截至目前这变态公司已经有 794 个章程了, 公司处处是红线.
+
+GC Free
+可以看到 Rust 员工连轴转, 没得歇, 这就是没 GC 时间.
+
+所以说 Rust 基本上就是资本家的终极形态了, 这就是为什么我们要抵制 Rust 的原因.
+
+</textarea>
+				
+			</section>
+
+			<section>
+				<h1>一级标题</h1>
+				<h2>二级标题</h2>
+				<h3>三级标题</h3>
+				<p>正文</p>
+			</section>
+		</div>
+
+	</div>
+
+	<script src="https://slides.guofei.site/dist/reveal.js"></script>
+	<script src="https://slides.guofei.site/plugin/zoom/zoom.js"></script>
+	<script src="https://slides.guofei.site/plugin/notes/notes.js"></script>
+	<script src="https://slides.guofei.site/plugin/search/search.js"></script>
+	<script src="https://slides.guofei.site/plugin/markdown/markdown.js"></script>
+	<script src="https://slides.guofei.site/plugin/math/math.js"></script>
+	<script src="https://slides.guofei.site/plugin/highlight/highlight.js"></script>
+	<script src="https://slides.guofei.site/dist/my.js"></script>
+
+	<script>
+		Reveal.initialize({
+			width: 1500,
+  			height: 900,
+			margin: 0.04,
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+			fragments: true,
+
+			mathjax2: {
+				config: 'TeX-AMS_HTML-full',
+				TeX: {
+					Macros: {
+						R: '\\mathbb{R}',
+						set: ['\\left\\{#1 \\; ; \\; #2\\right\\}', 2]
+					}
+				}
+			},
+			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.MathJax2]
+		});
+	</script>
+</body>
+
+</html>
