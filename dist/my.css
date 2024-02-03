@@ -1,3 +1,12 @@
+/* 按键 */
+.reveal kbd {
+	background: #cacbe6;
+	color: #000000;
+	padding: 1px 2px 1px 2px;
+	border: #31334b 1px solid;
+	box-shadow: 1px 1px 3px 0px #000000;
+}
+
 /* 分栏，比 r-hstack 好看，因为这里是固定宽度的 */
 .column2 {
     width: 48%;
@@ -21,14 +30,7 @@
     float: left;
 }
 
-/* 按键 */
-.reveal kbd {
-	background: #cacbe6;
-	color: #000000;
-	padding: 1px 2px 1px 2px;
-	border: #31334b 1px solid;
-	box-shadow: 1px 1px 3px 0px #000000;
-}
+
 
 .reveal .box {
 	width: 100% auto;
@@ -63,6 +65,7 @@
 }
 
 .reveal .box .content {
+	font-size: clamp(12px, 2vw, 40px);
 	padding-top: 0.8ex; 
 	padding-bottom: 1ex;
 	color: #000000;
